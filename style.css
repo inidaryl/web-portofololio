@@ -1,0 +1,580 @@
+/* Menjadikan semua style body,paragraf*/
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  /* Navigasi Menu */
+  
+  nav {
+    background: #565ef9;
+    padding: 10px 40px 10px 70px;
+    border: 1px solid #fcffe7;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid #364f6b;
+    border-left: none;
+    border-right: none;
+    color: white;
+  }
+  
+  nav ul {
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  /* LOGO */
+  nav ul li.logo {
+    flex: 1;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  nav ul li.logo:hover {
+    color: #fdfe0d;
+  }
+  
+  /* Menu item */
+  nav ul .items {
+    padding: 0 25px;
+    display: inline-flex;
+    color: white;
+  }
+  
+  nav ul .items a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 12px;
+    color: white;
+  }
+  
+  nav ul .items a:hover {
+    color: #fdfe0d;
+  }
+  
+  
+
+  
+  /* Property CSS Slide Show*/
+  
+  .slide {
+    max-width: auto;
+    height: 690px;
+    position: relative;
+  }
+  
+  .slide1,
+  .slide2,
+  .slide3,
+  .slide4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .slide1 {
+    background: url(gambar/galeri4.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade1 8s infinite;
+    -webkit-animation: fade1 8s infinite;
+  }
+  .slide2 {
+    background: url(gambar/galeri10.png) no-repeat center;
+    background-size: cover;
+    animation: fade2 8s infinite;
+    -webkit-animation: fade2 8s infinite;
+  }
+  .slide3 {
+    background: url(gambar/galeri7.jpeg) no-repeat center;
+    background-size: cover;
+    animation: fade3 8s infinite;
+    -webkit-animation: fade3 8s infinite;
+  }
+  
+  /* Property CSS Animasi Slide Show*/
+  @keyframes fade1 {
+    0% {
+      opacity: 1;
+    }
+    33.3333% {
+      opacity: 0;
+    }
+    66.666% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade2 {
+    0% {
+      opacity: 0;
+    }
+    33.3333% {
+      opacity: 1;
+    }
+    66.666% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade3 {
+    0% {
+      opacity: 1;
+    }
+    33.3333% {
+      opacity: 0;
+    }
+    66.666% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fade4 {
+    0% {
+      opacity: 0;
+    }
+    33.3333% {
+      opacity: 0;
+    }
+    66.666% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+  .sambutan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 0;
+    color: black;
+  }
+  
+
+  .sambutan h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    margin-right: 220px;
+  }
+  .sambutan p {
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: justify;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  
+  
+  .kontenvisi .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  
+  /*Untuk Visi Misi*/
+  .kontenvisi .container .visiMisi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 150px;
+    text-align: justify;
+  }
+  
+  /*Untuk Visi*/
+  .kontenvisi .container .visiMisi .visi {
+    margin: 0 50px 0 100px;
+
+  }
+  
+  .kontenvisi .container .visiMisi .visi h5 {
+    font-size: 1.2rem;
+margin-bottom: 3px;
+  }
+  
+  .kontenvisi .container .visiMisi .visi h3 {
+    font-size: 1.0rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  
+  /*Untuk Misi*/
+  .kontenvisi .container .visiMisi .misi h5 {
+    font-size: 1.2rem;
+margin-bottom: 3px;
+  }
+  
+  .kontenvisi .container .visiMisi .misi p {
+    font-size: 1.2rem;
+    font-family: "PT Serif", sans-serif;
+  }
+  
+  /* Property CSS Galeri*/
+
+.galeri {
+    padding: 50px 0;
+  }
+  .galeri h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .galeri .boxGaleri {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .galeri .boxGaleri .perBox {
+    position: relative;
+    margin: 10px;
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .galeri .boxGaleri .perBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+  }
+  
+  .galeri .boxGaleri .perBox h3 {
+    position: absolute;
+    bottom: -8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    left: 0;
+    padding-left: 5px;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    background-color: #0069d9;
+    font-size: 1rem;
+  }
+  
+  .galeri .boxGaleri .perBox:hover img {
+    opacity: 0.6;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  
+/* Property CSS Artikel*/
+.containerArtikelHome {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  
+  .containerArtikelHome h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .containerArtikelHome .artikelHome {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .containerArtikelHome .artikelHome .perArtikelHome {
+    width: 350px;
+    margin: 10px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .containerArtikelHome .artikelHome .perArtikelHome img {
+    width: 100%;
+    height: 225px;
+    border-radius: 5%;
+    margin-bottom: 10px;
+  }
+  
+  .containerArtikelHome .artikelHome .perArtikelHome h3 {
+    
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 900;
+    color: #000;
+  }
+  .containerArtikelHome .artikelHome .perArtikelHome:hover h3 {
+    color: #353bba;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .containerArtikelHome .artikelHome .perArtikelHome small {
+    color: #000;
+  }
+  
+  .containerArtikelHome .artikelHome .perArtikelHome small span {
+    color: #0e85e7;
+    font-weight: 700;
+  }
+  
+  .containerArtikelHome .artikelHome .perArtikelHome p {
+    font-size: 0.9rem;
+    color: #000;
+  }
+
+  /* footer */
+  
+  .footer-distributed{
+    background-color: #364f6b;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: justify;
+	font: bold 18px sans-serif;
+	padding: 50px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 25%;
+  margin-right: 200px;
+  margin-left: 25px;
+}
+
+.footer-distributed .footer-company-name{
+	color: #9c9c9c;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 18px;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #353bba;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 75px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+    font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+    color: white;
+	font-weight: normal;
+	font-size:17px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  white;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight:300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+
+
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #9c9c9c;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  rgb(177, 177, 177);
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+
+h1{color: black; padding-left: 250px; padding-bottom: 20px;}
+img{ width: 100px; height: 100px;}
+.kiri{float:left;}
+.kanan{float: right;}
+hr {
+    position: fixed;
+    background-color: #424242;
+
+    width: 100%;
+    height: 20px;
+    z-index: 800;
+
+}
+.badan{
+  
+    height: 600px;
+    width: 100%;
+
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: relative;
+
+}
+.badan p{
+  padding-right: 320px;
+padding-left: 120px;}
+
+
+
+#konten {
+    float: center;
+    height: 600px;
+    width: 100%;
+
+    color: #2e2e2e;
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    position: relative;
+    border-style: double;
+}
+
+
+
